@@ -10,13 +10,12 @@ const tutorials = [
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
 ];
-
+// Creates a function to capatalize the first letter of every word in each string
 const titleCased = () =>
  // Uses map to iterate over each tutorial in the array
 tutorials.map(tutorial =>
   // Splits each tutorial string into an array of words
-  tutorial
-    .split(' ')
+  tutorial.split(' ')
     // Uses map to iterate over each word in the array of words
     .map(word =>
       // Capitalizes the first letter of each word and combines it with the rest of the word
